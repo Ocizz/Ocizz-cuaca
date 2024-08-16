@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cuaca by ochi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  
+
+</head>
+<body>
+  
+<!-- Loading Screen -->
+    <div id="loading">
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="content">
+        <!-- Your main web content goes here --></div>
+        
+        <div class="video-background">
+        <video autoplay loop muted>
+            <source src="cuaca.mp4" type="video/mp4">
+            
+        </video>
+    </div>
+    
+    <div class="wrapper">
+      <span></span>
+    </div>
+    
+    <main>
+        <form>
+            <input type="text" id="name" autocomplete="off">
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <section class="result">
+
+            <figure class="name">
+                <figcaption>Lo1ndon</figcaption> 
+                <img src="https://flagsapi.com/GB/shiny/32.png">
+            </figure>
+
+            <figure class="temperature">
+                <img src="https://openweathermap.org/img/wn/10d@4x.png">
+                <figcaption>
+                    <span>31</span>
+                    <sup>o</sup>
+                </figcaption> 
+            </figure>
+            <p class="description">overcast clouds</p>
+            <ul>
+                <li>
+                    <span>awan</span>
+                    <i class="fa-solid fa-cloud"></i>
+                    <span id="clouds">98</span>%
+                </li>
+                <li>
+                    <span>kelembapan</span>
+                    <i class="fa-solid fa-droplet"></i>
+                    <span id="humidity">98</span>%
+                </li>
+                <li>
+                    <span>kecepatan angin</span>
+                    <i class="fa-solid fa-gauge"></i>
+                    <span id="pressure">1011</span>hPa
+                </li>
+            </ul>
+        </section>
+    </main>
+        <script src="app.js"></script>
+
+  </ul>
+</div>
+</body>
+</html>
+        
+        
+
+    <script>
+        window.addEventListener('load', function() {
+            const loadingScreen = document.getElementById('loading');
+            loadingScreen.style.opacity = '0';
+            loadingScreen.style.pointerEvents = 'none';
+            setTimeout(() => loadingScreen.style.display = 'none', 1000); // Optional: to completely remove the element
+        });
+    </script>
+</body>
+</html>
